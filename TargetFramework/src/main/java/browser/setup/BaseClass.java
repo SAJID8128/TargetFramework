@@ -3,7 +3,6 @@ package browser.setup;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -20,7 +19,7 @@ public WebDriver driver;
 	@BeforeTest
 	public void setup() throws IOException {
 		
-		String path = "/Users/nyla/eclipse-workspace/TargetFramework/config.properties";
+		String path = "/Users/nyla/Git/TargetFramework/TargetFramework/config.properties";
 		Properties configPath = ReadConfigFile.readConfigFile(path);
 		
 		// Reading data from the file
